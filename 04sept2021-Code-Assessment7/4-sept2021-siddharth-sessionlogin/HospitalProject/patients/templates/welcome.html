@@ -1,0 +1,29 @@
+{% extends 'headings1.html' %}
+{% block myContent  %}
+
+ <table class="table">
+
+    
+        <tr>
+            <td> Name </td>
+            <!-- for updating -->
+            <!-- <td> <input type="text" value=" {{ data.name }} " class="form-control"> </td> -->
+
+            <td> {{data.pname}} </td>
+        </tr>
+        <tr>
+            <td>Address </td>
+            <td>  {{ data.paddress }}</td>
+        </tr>
+        <tr>
+            <td>Email </td>
+            <td>  {{ data.pemail }}</td>
+        </tr>
+
+          <tr>
+            <td> </td>
+            <td>  <button class="btn btn-success"> Edit </button></td>
+        </tr>
+    </table>
+
+{% endblock   %}
