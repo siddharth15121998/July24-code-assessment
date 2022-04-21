@@ -4,7 +4,7 @@ pipeline {
     stage('build') {
       steps {
         sh '''#!/bin/bash
-apt install nginx'''
+sudo apt-get install nginx'''
       }
     }
 
